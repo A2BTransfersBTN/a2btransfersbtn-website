@@ -1,0 +1,351 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Avenir", sans-serif;
+}
+
+.header {
+  background-color: rgb(0, 190, 190);
+  padding: 1rem 3rem;
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    padding: 1rem 5rem;
+  }
+}
+.header__logo {
+  width: 10rem;
+}
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .header__wrapper {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__wrapper {
+    width: 123rem;
+    margin: 0 auto;
+  }
+}
+
+.nav {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    justify-content: flex-end;
+    font-size: 1.8rem;
+  }
+}
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+}
+.nav__link:hover {
+  color: rgb(0, 132, 180);
+}
+@media screen and (min-width: 768px) {
+  .nav__item:not(:last-child) {
+    margin-right: 2.5rem;
+  }
+}
+
+.footer {
+  background-color: rgb(0, 190, 190);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    padding: 2rem 3rem;
+    justify-content: space-between;
+    align-items: end;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding: 2rem 5rem;
+  }
+}
+.footer__text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__text {
+    text-align: start;
+    margin-bottom: 0;
+  }
+}
+.footer__title {
+  color: #fff;
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+.footer__lewes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__copyright, .footer__licenced {
+  color: rgb(245, 245, 245);
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__copyright, .footer__licenced {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__copyright, .footer__licenced {
+    font-size: 1.4rem;
+  }
+}
+.footer__lewes-logo {
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__lewes-logo {
+    width: 9rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__lewes-logo {
+    width: 7rem;
+  }
+}
+
+.airport {
+  height: 30vh;
+  background-image: url(./images/airport.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1280px) {
+  .airport {
+    height: 50vh;
+  }
+}
+.airport__title {
+  font-size: 2.2rem;
+  text-shadow: 2px 2px 8px #000;
+}
+@media screen and (min-width: 768px) {
+  .airport__title {
+    font-size: 2.6rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .airport__title {
+    font-size: 3.2rem;
+  }
+}
+
+.services {
+  margin: 3rem;
+}
+@media screen and (min-width: 1280px) {
+  .services {
+    width: 120rem;
+    margin: 0 auto;
+  }
+}
+.services__heading {
+  font-size: 2.2rem;
+  color: rgb(26, 26, 26);
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .services__heading {
+    font-size: 2.6rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .services__heading {
+    margin-top: 3rem;
+  }
+}
+.services__subheading {
+  font-size: 1.6rem;
+  color: rgb(61, 61, 61);
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .services__subheading {
+    font-size: 1.8rem;
+  }
+}
+.services__item {
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  padding: 1rem;
+  color: rgb(26, 26, 26);
+  border-radius: 3px;
+}
+@media screen and (min-width: 768px) {
+  .services__item {
+    font-size: 2rem;
+  }
+}
+
+.charges {
+  margin-top: 2rem;
+  background-color: rgb(245, 245, 245);
+  padding: 1.5rem;
+  border-radius: 3px;
+  text-align: center;
+}
+@media screen and (min-width: 1280px) {
+  .charges {
+    display: flex;
+  }
+}
+.charges__line {
+  height: 1px;
+  background-color: rgba(61, 61, 61, 0.4);
+  margin: 1.5rem 0;
+}
+@media screen and (min-width: 1280px) {
+  .charges__line {
+    width: 2px;
+    padding: 5rem 0;
+    margin: 0 2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .charges__meetgreet {
+    width: 80%;
+  }
+}
+.charges__title {
+  color: rgb(26, 26, 26);
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 768px) {
+  .charges__title {
+    font-size: 2rem;
+  }
+}
+.charges__info {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  color: rgb(61, 61, 61);
+}
+@media screen and (min-width: 768px) {
+  .charges__info {
+    font-size: 1.8rem;
+  }
+}
+
+.prices {
+  margin: 0 3rem;
+  text-align: center;
+}
+@media screen and (min-width: 1280px) {
+  .prices {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 132rem;
+    margin: 3rem auto;
+  }
+}
+.prices__title {
+  font-size: 2.2rem;
+  color: rgb(26, 26, 26);
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .prices__title {
+    font-size: 2.6rem;
+  }
+}
+.prices__price {
+  margin: 1rem 0;
+  background-color: rgb(245, 245, 245);
+  padding: 1rem 0;
+  border-radius: 3px;
+}
+@media screen and (min-width: 1280px) {
+  .prices__price {
+    margin: 1rem;
+    padding: 2rem;
+  }
+}
+.prices__name {
+  color: rgb(26, 26, 26);
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .prices__name {
+    font-size: 2rem;
+  }
+}
+.prices__cost {
+  font-size: 1.6rem;
+  color: rgb(61, 61, 61);
+}
+@media screen and (min-width: 768px) {
+  .prices__cost {
+    font-size: 2rem;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.button__btn {
+  background-color: rgb(0, 190, 190);
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 3px;
+}
+@media screen and (min-width: 768px) {
+  .button__btn {
+    font-size: 2rem;
+  }
+}
+.button__btn:hover {
+  background-color: rgb(0, 132, 180);
+}/*# sourceMappingURL=services.css.map */

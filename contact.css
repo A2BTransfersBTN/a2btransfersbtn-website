@@ -1,0 +1,319 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Avenir", sans-serif;
+}
+
+.header {
+  background-color: rgb(0, 190, 190);
+  padding: 1rem 3rem;
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    padding: 1rem 5rem;
+  }
+}
+.header__logo {
+  width: 10rem;
+}
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .header__wrapper {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__wrapper {
+    width: 123rem;
+    margin: 0 auto;
+  }
+}
+
+.nav {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    justify-content: flex-end;
+    font-size: 1.8rem;
+  }
+}
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+}
+.nav__link:hover {
+  color: rgb(0, 132, 180);
+}
+@media screen and (min-width: 768px) {
+  .nav__item:not(:last-child) {
+    margin-right: 2.5rem;
+  }
+}
+
+.footer {
+  background-color: rgb(0, 190, 190);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    padding: 2rem 3rem;
+    justify-content: space-between;
+    align-items: end;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding: 2rem 5rem;
+  }
+}
+.footer__text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__text {
+    text-align: start;
+    margin-bottom: 0;
+  }
+}
+.footer__title {
+  color: #fff;
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+.footer__lewes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__copyright, .footer__licenced {
+  color: rgb(245, 245, 245);
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__copyright, .footer__licenced {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__copyright, .footer__licenced {
+    font-size: 1.4rem;
+  }
+}
+.footer__lewes-logo {
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__lewes-logo {
+    width: 9rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__lewes-logo {
+    width: 7rem;
+  }
+}
+
+.contact {
+  height: 30vh;
+  background-image: url(./images/contact.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1280px) {
+  .contact {
+    height: 50vh;
+  }
+}
+.contact__title {
+  font-size: 2.2rem;
+  text-shadow: 2px 2px 8px #000;
+}
+@media screen and (min-width: 768px) {
+  .contact__title {
+    font-size: 2.6rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact__title {
+    font-size: 3.2rem;
+  }
+}
+
+.booking {
+  margin: 3rem;
+}
+@media screen and (min-width: 1280px) {
+  .booking {
+    width: 120rem;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+.booking__form {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1280px) {
+  .booking__form {
+    width: 70rem;
+  }
+}
+.booking__container {
+  background-color: rgb(245, 245, 245);
+  padding: 1rem;
+  border-radius: 3px;
+}
+@media screen and (min-width: 768px) {
+  .booking__container {
+    padding: 1rem 3rem;
+  }
+}
+.booking__block {
+  margin: 1.5rem 0;
+}
+.booking__title {
+  font-size: 2.2rem;
+  color: rgb(26, 26, 26);
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .booking__title {
+    font-size: 2.6rem;
+  }
+}
+.booking__label {
+  font-size: 1.6rem;
+  color: rgb(61, 61, 61);
+}
+@media screen and (min-width: 768px) {
+  .booking__label {
+    font-size: 2rem;
+  }
+}
+.booking__input {
+  border: 1px solid rgb(61, 61, 61);
+  border-radius: 2px;
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 768px) {
+  .booking__input {
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
+}
+.booking__message {
+  font-family: inherit;
+  width: 100%;
+  height: 10rem;
+  border: 1px solid rgb(61, 61, 61);
+  padding: 0.5rem;
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 768px) {
+  .booking__message {
+    font-size: 1.8rem;
+  }
+}
+.booking__submit {
+  padding: 1rem 1.5rem;
+  background-color: rgb(0, 190, 190);
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .booking__submit {
+    font-size: 2rem;
+  }
+}
+.booking__submit:hover {
+  background-color: rgb(0, 132, 180);
+}
+
+@media screen and (min-width: 1280px) {
+  .direct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.direct__container {
+  padding: 3rem;
+  background-color: rgb(245, 245, 245);
+}
+@media screen and (min-width: 1280px) {
+  .direct__container {
+    margin-bottom: 2rem;
+    border-radius: 3px;
+    width: 70rem;
+  }
+}
+.direct__title {
+  font-size: 2.2rem;
+  color: rgb(26, 26, 26);
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .direct__title {
+    font-size: 2.6rem;
+  }
+}
+.direct__info {
+  font-size: 1.6rem;
+  color: rgb(61, 61, 61);
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .direct__info {
+    font-size: 2rem;
+  }
+}
+.direct__contact {
+  font-size: 1.6rem;
+  color: rgb(61, 61, 61);
+}
+@media screen and (min-width: 768px) {
+  .direct__contact {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=contact.css.map */

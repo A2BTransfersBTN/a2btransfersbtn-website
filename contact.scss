@@ -1,0 +1,178 @@
+@use "partials/variables" as *;
+@use "partials/resets";
+@use "partials/mixins" as *;
+@use "partials/globals" as *;
+
+.contact {
+  height: 30vh;
+  background-image: url(./images/contact.jpg);
+  background-size: cover;
+  background-position: center;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include desktop {
+    height: 50vh;
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 8px #000;
+
+    @include tablet {
+      font-size: 2.6rem;
+    }
+
+    @include desktop {
+      font-size: 3.2rem;
+    }
+  }
+}
+
+.booking {
+  margin: 3rem;
+
+  @include desktop {
+    width: 120rem;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+      width: 70rem;
+    }
+  }
+
+  &__container {
+    background-color: $offwhite;
+    padding: 1rem;
+    border-radius: 3px;
+
+    @include tablet {
+      padding: 1rem 3rem;
+    }
+  }
+
+  &__block {
+    margin: 1.5rem 0;
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    color: $darkblack;
+    margin-bottom: 1rem;
+
+    @include tablet {
+      font-size: 2.6rem;
+    }
+  }
+
+  &__label {
+    font-size: 1.6rem;
+    color: $darkgrey;
+
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+
+  &__input {
+    border: 1px solid $darkgrey;
+    border-radius: 2px;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1.4rem;
+
+    @include tablet {
+      padding: 1rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__message {
+    font-family: inherit;
+    width: 100%;
+    height: 10rem;
+    border: 1px solid $darkgrey;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+
+    @include tablet {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__submit {
+    padding: 1rem 1.5rem;
+    background-color: $light_green;
+    border: none;
+    border-radius: 3px;
+    color: $white;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+
+    @include tablet {
+      font-size: 2rem;
+    }
+
+    &:hover {
+      background-color: $dark_green;
+    }
+  }
+}
+
+.direct {
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__container {
+    padding: 3rem;
+    background-color: $offwhite;
+
+    @include desktop {
+      margin-bottom: 2rem;
+      border-radius: 3px;
+      width: 70rem;
+    }
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    color: $darkblack;
+    margin-bottom: 1rem;
+
+    @include tablet {
+      font-size: 2.6rem;
+    }
+  }
+
+  &__info {
+    font-size: 1.6rem;
+    color: $darkgrey;
+    margin-bottom: 1rem;
+
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+
+  &__contact {
+    font-size: 1.6rem;
+    color: $darkgrey;
+
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+}

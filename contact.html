@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="icon" type="image/x-icon" href="./images/a2blogo.png" />
+    <title>A2B Transfers Brighton | Make Booking</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <a href="index.html"
+          ><img class="header__logo" src="./images/a2blogo.png" alt="a2b logo"
+        /></a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="services.html">Services</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="contact.html">Make Booking</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="terms.html">Terms & Conditions</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="contact">
+        <h1 class="contact__title">Make a booking with us now</h1>
+      </div>
+
+      <section class="booking">
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="booking__form"
+        >
+          <div class="booking__contactinfo">
+            <h2 class="booking__title">Please fill in the details below</h2>
+          </div>
+          <input
+            type="hidden"
+            name="access_key"
+            value="e87455d8-d5de-415f-b769-12c4e9ccbadd"
+          />
+          <div class="booking__container">
+            <div class="booking__block">
+              <label class="booking__label" for="name">Name:</label>
+              <br />
+              <input
+                type="text"
+                name="name"
+                placeholder="John Smith"
+                class="booking__input"
+                class="booking__name"
+                required
+              />
+            </div>
+
+            <div class="booking__block">
+              <label class="booking__label" for="email">Email:</label>
+              <br />
+              <input
+                type="email"
+                name="email"
+                placeholder="johnsmith@gmail.com"
+                class="booking__input"
+                class="booking__email"
+                required
+              />
+            </div>
+
+            <div class="booking__block">
+              <label class="booking__label" for="tel">Phone Number:</label>
+              <br />
+              <input
+                type="tel"
+                name="tel"
+                placeholder="+44"
+                class="booking__input"
+                class="booking__tel"
+                required
+              />
+            </div>
+
+            <div class="booking__block">
+              <label class="booking__label" for="date">Pick up date:</label>
+              <br />
+              <input
+                type="date"
+                name="date"
+                placeholder="Select your date"
+                class="booking__input"
+                class="booking__date"
+                required
+              />
+            </div>
+
+            <div class="booking__block">
+              <label class="booking__label" for="time">Pickup time:</label>
+              <br />
+              <input
+                type="time"
+                name="time"
+                placeholder="Time of pick up"
+                class="booking__input"
+                class="booking__time"
+                required
+              />
+            </div>
+
+            <div class="booking__block">
+              <label class="booking__label" for="from">Pick up address:</label>
+              <br />
+              <input
+                type="text"
+                name="from"
+                placeholder="Pick up from"
+                class="booking__input"
+                class="booking__from"
+                required
+              />
+            </div>
+
+            <div class="booking__block">
+              <label class="booking__label" for="to">Drop off address:</label>
+              <br />
+              <input
+                type="text"
+                name="to"
+                placeholder="Drop off at"
+                class="booking__input"
+                class="booking__to"
+                required
+              />
+            </div>
+
+            <div class="booking__block">
+              <label class="booking__label" for="passengers"
+                >No. of passengers:</label
+              >
+              <br />
+              <input
+                type="number"
+                name="passengers"
+                placeholder="1"
+                class="booking__input"
+                class="booking__passengers"
+                required
+              />
+            </div>
+
+            <div class="booking__block">
+              <label class="booking__label" for="message"
+                >Additional info:</label
+              >
+              <br />
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Message"
+                class="booking__message"
+              ></textarea>
+            </div>
+          </div>
+          <input class="booking__submit" type="submit" value="Submit" />
+        </form>
+      </section>
+
+      <section class="direct">
+        <div class="direct__container">
+          <h1 class="direct__title">Or contact us directly</h1>
+          <p class="direct__info">
+            If you have any questions or would like to contact us directly to
+            make a booking, then please reach out to us through the contact
+            methods below:
+          </p>
+          <p class="direct__contact">Phone: <strong>+447961950105</strong></p>
+          <p class="direct__contact">
+            Email: <strong>a2btransfersbrighton@gmail.com</strong>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__text">
+        <h1 class="footer__title">A2BTransfersBTN</h1>
+        <p class="footer__copyright">
+          Copyright A2BTransfersBTN © 2024 All Rights Reserved
+        </p>
+      </div>
+
+      <div class="footer__lewes">
+        <img
+          src="./images/lewes.png"
+          alt="Lewes Council"
+          class="footer__lewes-logo"
+        />
+        <p class="footer__licenced">We are authorized by</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+@use "partials/variables" as *;
+@use "partials/resets";
+@use "partials/mixins" as *;
+@use "partials/globals" as *;
+
+.airport {
+  height: 30vh;
+  background-image: url(./images/airport.jpg);
+  background-size: cover;
+  background-position: center;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include desktop {
+    height: 50vh;
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 8px #000;
+
+    @include tablet {
+      font-size: 2.6rem;
+    }
+
+    @include desktop {
+      font-size: 3.2rem;
+    }
+  }
+}
+
+.services {
+  margin: 3rem;
+
+  @include desktop {
+    width: 120rem;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    font-size: 2.2rem;
+    color: $darkblack;
+    margin-bottom: 1rem;
+
+    @include tablet {
+      font-size: 2.6rem;
+    }
+
+    @include desktop {
+      margin-top: 3rem;
+    }
+  }
+
+  &__subheading {
+    font-size: 1.6rem;
+    color: $darkgrey;
+    margin-bottom: 2rem;
+
+    @include tablet {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__item {
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: $offwhite;
+    padding: 1rem;
+    color: $darkblack;
+    border-radius: 3px;
+
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+}
+
+.charges {
+  margin-top: 2rem;
+  background-color: $offwhite;
+  padding: 1.5rem;
+  border-radius: 3px;
+  text-align: center;
+
+  @include desktop {
+    display: flex;
+  }
+
+  &__line {
+    height: 1px;
+    background-color: rgba($color: $darkgrey, $alpha: 0.4);
+    margin: 1.5rem 0;
+
+    @include desktop {
+      width: 2px;
+      padding: 5rem 0;
+      margin: 0 2rem;
+    }
+  }
+
+  @include desktop {
+    &__meetgreet {
+      width: 80%;
+    }
+  }
+
+  &__title {
+    color: $darkblack;
+    font-size: 1.6rem;
+
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+
+  &__info {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color: $darkgrey;
+
+    @include tablet {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.prices {
+  margin: 0 3rem;
+  text-align: center;
+
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 132rem;
+    margin: 3rem auto;
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    color: $darkblack;
+    margin-bottom: 1rem;
+
+    @include tablet {
+      font-size: 2.6rem;
+    }
+  }
+
+  &__price {
+    margin: 1rem 0;
+    background-color: $offwhite;
+    padding: 1rem 0;
+    border-radius: 3px;
+
+    @include desktop {
+      margin: 1rem;
+      padding: 2rem;
+    }
+  }
+
+  &__name {
+    color: $darkblack;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+
+  &__cost {
+    font-size: 1.6rem;
+    color: $darkgrey;
+
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+
+  &__btn {
+    background-color: $light_green;
+    padding: 1rem 2rem;
+    color: $white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 3px;
+
+    @include tablet {
+      font-size: 2rem;
+    }
+
+    &:hover {
+      background-color: $dark_green;
+    }
+  }
+}

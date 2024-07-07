@@ -1,0 +1,317 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Avenir", sans-serif;
+}
+
+.header {
+  background-color: rgb(0, 190, 190);
+  padding: 1rem 3rem;
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    padding: 1rem 5rem;
+  }
+}
+.header__logo {
+  width: 10rem;
+}
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .header__wrapper {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__wrapper {
+    width: 123rem;
+    margin: 0 auto;
+  }
+}
+
+.nav {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    justify-content: flex-end;
+    font-size: 1.8rem;
+  }
+}
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+}
+.nav__link:hover {
+  color: rgb(0, 132, 180);
+}
+@media screen and (min-width: 768px) {
+  .nav__item:not(:last-child) {
+    margin-right: 2.5rem;
+  }
+}
+
+.footer {
+  background-color: rgb(0, 190, 190);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    padding: 2rem 3rem;
+    justify-content: space-between;
+    align-items: end;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding: 2rem 5rem;
+  }
+}
+.footer__text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__text {
+    text-align: start;
+    margin-bottom: 0;
+  }
+}
+.footer__title {
+  color: #fff;
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+.footer__lewes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__copyright, .footer__licenced {
+  color: rgb(245, 245, 245);
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__copyright, .footer__licenced {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__copyright, .footer__licenced {
+    font-size: 1.4rem;
+  }
+}
+.footer__lewes-logo {
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__lewes-logo {
+    width: 9rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__lewes-logo {
+    width: 7rem;
+  }
+}
+
+.hero {
+  height: 50vh;
+  background-image: url(./images/car1.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    height: 70vh;
+  }
+}
+.hero__headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__heading {
+  font-size: 2.2rem;
+  text-align: center;
+  text-shadow: 2px 2px 8px #000;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .hero__heading {
+    font-size: 2.6rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__heading {
+    font-size: 3.2rem;
+  }
+}
+.hero__subheading {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  color: #d3d3d3;
+  text-shadow: 2px 2px 8px #000;
+}
+@media screen and (min-width: 768px) {
+  .hero__subheading {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__subheading {
+    font-size: 2.6rem;
+  }
+}
+.hero__btn {
+  margin-top: 2.5rem;
+  background-color: rgb(0, 190, 190);
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+@media screen and (min-width: 768px) {
+  .hero__btn {
+    font-size: 2rem;
+  }
+}
+.hero__btn:hover {
+  background-color: rgb(0, 132, 180);
+}
+
+.about {
+  padding: 3rem 3rem 2rem 3rem;
+  text-align: center;
+}
+@media screen and (min-width: 1280px) {
+  .about {
+    width: 102rem;
+    margin: 0 auto;
+  }
+}
+.about__title {
+  font-size: 2.2rem;
+  color: rgb(26, 26, 26);
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .about__title {
+    font-size: 2.6rem;
+  }
+}
+.about__info {
+  font-size: 1.6rem;
+  color: rgb(61, 61, 61);
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .about__info {
+    font-size: 1.8rem;
+  }
+}
+
+.cars {
+  background-color: rgb(245, 245, 245);
+  padding: 3rem;
+}
+@media screen and (min-width: 1280px) {
+  .cars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.cars__title {
+  color: rgb(26, 26, 26);
+  font-size: 2.2rem;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .cars__title {
+    font-size: 2.6rem;
+  }
+}
+.cars__card-img {
+  width: 30rem;
+}
+@media screen and (min-width: 768px) {
+  .cars__card-img {
+    width: 35rem;
+  }
+}
+.cars__card-title {
+  font-size: 1.8rem;
+  color: rgb(26, 26, 26);
+}
+@media screen and (min-width: 768px) {
+  .cars__card-title {
+    font-size: 2.2rem;
+  }
+}
+.cars__card-info {
+  font-size: 1.4rem;
+  color: rgb(61, 61, 61);
+}
+@media screen and (min-width: 768px) {
+  .cars__card-info {
+    font-size: 1.8rem;
+  }
+}
+.cars__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+  text-align: center;
+}
+@media screen and (min-width: 1280px) {
+  .cars__card {
+    width: 40rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cars__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100rem;
+  }
+}/*# sourceMappingURL=index.css.map */

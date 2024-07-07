@@ -1,0 +1,131 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.header {
+  background-color: $light_green;
+  padding: 1rem 3rem;
+
+  @include desktop {
+    padding: 1rem 5rem;
+  }
+
+  &__logo {
+    width: 10rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+      flex-direction: row;
+    }
+
+    @include desktop {
+      width: 123rem;
+      margin: 0 auto;
+    }
+  }
+}
+
+.nav {
+  width: 100%;
+  margin-top: 0.5rem; //adds space between logo and links
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.5rem;
+
+    @include tablet {
+      justify-content: flex-end;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__link {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      color: $dark_green;
+    }
+  }
+
+  @include tablet {
+    &__item:not(:last-child) {
+      margin-right: 2.5rem;
+    }
+  }
+}
+
+.footer {
+  background-color: $light_green;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    flex-direction: row;
+    padding: 2rem 3rem;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  @include desktop {
+    padding: 2rem 5rem;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    @include tablet {
+      text-align: start;
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    color: $white;
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__lewes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__copyright,
+  &__licenced {
+    color: $offwhite;
+    font-size: 1.4rem;
+
+    @include tablet {
+      font-size: 1.8rem;
+    }
+
+    @include desktop {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__lewes-logo {
+    width: 10rem;
+    margin-bottom: 1rem;
+
+    @include tablet {
+      width: 9rem;
+    }
+
+    @include desktop {
+      width: 7rem;
+    }
+  }
+}

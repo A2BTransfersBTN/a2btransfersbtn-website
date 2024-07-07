@@ -1,0 +1,175 @@
+@use "partials/variables" as *;
+@use "partials/resets";
+@use "partials/mixins" as *;
+@use "partials/globals" as *;
+
+.hero {
+  height: 50vh;
+  background-image: url(./images/car1.jpg);
+  background-size: cover;
+  background-position: center;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+
+  @include desktop {
+    height: 70vh;
+  }
+
+  &__headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__heading {
+    font-size: 2.2rem;
+    text-align: center;
+    text-shadow: 2px 2px 8px #000;
+    color: $white;
+
+    @include tablet {
+      font-size: 2.6rem;
+    }
+
+    @include desktop {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__subheading {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: #d3d3d3;
+    text-shadow: 2px 2px 8px #000;
+
+    @include tablet {
+      font-size: 2.2rem;
+    }
+
+    @include desktop {
+      font-size: 2.6rem;
+    }
+  }
+
+  &__btn {
+    margin-top: 2.5rem;
+    background-color: $light_green;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    border: none;
+    color: $white;
+    font-size: 1.6rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+
+    @include tablet {
+      font-size: 2rem;
+    }
+
+    &:hover {
+      background-color: $dark_green;
+    }
+  }
+}
+
+.about {
+  padding: 3rem 3rem 2rem 3rem;
+  text-align: center;
+
+  @include desktop {
+    width: 102rem;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    color: $darkblack;
+    margin-bottom: 1rem;
+
+    @include tablet {
+      font-size: 2.6rem;
+    }
+  }
+
+  &__info {
+    font-size: 1.6rem;
+    color: $darkgrey;
+    margin-bottom: 1rem;
+
+    @include tablet {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.cars {
+  background-color: $offwhite;
+  padding: 3rem;
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    color: $darkblack;
+    font-size: 2.2rem;
+    text-align: center;
+
+    @include tablet {
+      font-size: 2.6rem;
+    }
+  }
+
+  &__card-img {
+    width: 30rem;
+
+    @include tablet {
+      width: 35rem;
+    }
+  }
+
+  &__card-title {
+    font-size: 1.8rem;
+    color: $darkblack;
+
+    @include tablet {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__card-info {
+    font-size: 1.4rem;
+    color: $darkgrey;
+
+    @include tablet {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    text-align: center;
+
+    @include desktop {
+      width: 40rem;
+    }
+  }
+
+  @include desktop {
+    &__cards {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100rem;
+    }
+  }
+}
