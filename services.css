@@ -325,6 +325,21 @@ body {
     font-size: 2rem;
   }
 }
+.prices__charges {
+  margin: 2rem 3rem 0 3rem;
+}
+.prices__charges-text {
+  font-size: 1.6rem;
+  color: rgb(26, 26, 26);
+  text-align: center;
+}
+.prices__charges-hire {
+  font-size: 1.6rem;
+  color: rgb(26, 26, 26);
+  text-align: center;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
 
 .button {
   display: flex;
