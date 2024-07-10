@@ -179,6 +179,24 @@
       font-size: 2rem;
     }
   }
+
+  &__charges {
+    margin: 2rem 3rem 0 3rem;
+  }
+
+  &__charges-text {
+    font-size: 1.6rem;
+    color: $darkblack;
+    text-align: center;
+  }
+
+  &__charges-hire {
+    font-size: 1.6rem;
+    color: $darkblack;
+    text-align: center;
+    margin-top: 2rem;
+    text-transform: uppercase;
+  }
 }
 
 .button {
